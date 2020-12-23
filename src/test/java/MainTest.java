@@ -44,7 +44,7 @@ public class MainTest {
 
 	@Test
 	void staticTest() {
-		assert StaticClass.str.equals("hello");
+		assert StaticClass.staticStr.equals("hello");
 	}
 
 	@Test
@@ -56,8 +56,8 @@ public class MainTest {
 		normalClass1.str = "world";
 		assert(normalClass1.str != normalClass2.str);
 
-		String str1 = StaticClass.str;
-		String str2 = StaticClass.str;
+		String str1 = StaticClass.staticStr;
+		String str2 = StaticClass.staticStr;
 
 		assert (str1 == str2);
 		str1 = "world";

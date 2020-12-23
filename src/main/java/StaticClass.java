@@ -1,5 +1,24 @@
-public class StaticClass {
+class StaticClass {
+	String nonStaticStr = "world";
+	static String staticStr = "hello";
+	static final String aa = "aa";	// 상수
 
-	// singleton
-	static String str = "hello";
+	public StaticClass() {
+	}
+
+	public StaticClass(String nonStaticStr) {
+		this.nonStaticStr = nonStaticStr;
+	}
+
+	public static String staticFuc() {
+		return staticStr;
+	}
+
+	public String nonStaticFuc() {
+		return nonStaticStr;
+	}
+
+	static class InnerClass {
+
+	}
 }
